@@ -1,0 +1,10 @@
+<h1>Mission List</h1>
+
+<mat-card style='background-color:darksalmon;'  *ngFor="let mission of missions">
+        <img mat-card-sm-image src={{mission.links.mission_patch_small}} >
+        <mat-card-title>{{mission.mission_name}}</mat-card-title>
+        <mat-card-content>{{mission.launch_year}}</mat-card-content>
+        <mat-card-content>{{mission.details}}</mat-card-content>
+        <button mat-raised-button color="primary" (click)=onDetailButtonClick()>Mission Details</button>
+        <app-mission-details [missions]="mission">Mission Details</app-mission-details>
+</mat-card>
