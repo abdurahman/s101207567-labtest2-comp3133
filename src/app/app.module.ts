@@ -8,7 +8,8 @@ import { MissionListComponent } from './mission-list/mission-list.component';
 import { MissionDetailsComponent } from './mission-details/mission-details.component';
 import { HttpClientModule } from '@angular/common/http';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-
+import { MatDividerModule } from '@angular/material/divider';
+import { MatExpansionModule } from '@angular/material/expansion';
 
 
 @NgModule({
@@ -24,6 +25,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     MatCardModule,
     MatButtonModule,
     HttpClientModule,
+    MatDividerModule,
+    MatExpansionModule
   ],
   providers: [],
   bootstrap: [AppComponent]
