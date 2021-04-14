@@ -122,6 +122,10 @@
               "devServerTarget": "s101207567-labtest2-comp3133:serve:production"
             }
           }
+        },
+        "deploy": {
+          "builder": "angular-cli-ghpages:deploy",
+          "options": {}
         }
       }
     }
